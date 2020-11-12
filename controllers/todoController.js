@@ -2,7 +2,7 @@ var bodyParser = require('body-parser')
 var mongoose = require('mongoose')
 
 //Connect To The Database
-mongoose.connect("mongodb+srv://test:test@todo.x6opt.mongodb.net/todo?retryWrites=true&w=majority&tls=true", {useUnifiedTopology: true,
+mongoose.connect("<url>", {useUnifiedTopology: true,
                                                                                                               useNewUrlParser: true,}).then(() => console.log('DB Connected!'))
                                                                                                               .catch(err => {
                                                                                                                    console.log('DB Connection Error: ' + err)
